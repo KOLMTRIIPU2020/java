@@ -1,28 +1,17 @@
+import java.util.Scanner;
+
 public class Calculator {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        int result = calculator.calculate(5, 2, '+');
-        System.out.println("Result: " + result);
-    }
+        Scanner scanner = new Scanner(System.in);
 
-    public int calculate(int num1, int num2, char operator) {
-        int result = 0;
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default:
-                System.out.println("Invalid operator");
-        }
-        return result;
+        int num1 = scanner.nextInt();
+        char symbol = scanner.next().charAt(0);
+        int num2 = scanner.nextInt();
+
+        Mat mat = new Mat();
+
+        int result = mat.calc(num1, symbol, num2);
+
+        System.out.println("Результат: " + result);
     }
 }
