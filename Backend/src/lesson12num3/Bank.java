@@ -123,8 +123,4 @@ public class Bank {
     }
 }
 
-enum CurrencyType {
-    MANAT,
-    DOLLAR,
-    RUBLE
-}
+enum
