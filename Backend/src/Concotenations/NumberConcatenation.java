@@ -17,4 +17,4 @@ public class NumberConcatenation {
     }
 }
 
-//concotenations я английский хорошо знаю поэтому название страшное
+//concatenations я английский хорошо знаю поэтому название страшное
